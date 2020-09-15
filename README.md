@@ -1,1 +1,1 @@
-Inf122 Funksjonell Programmering - Ukentlige oppgaver
+## Inf122 Funksjonell Programmering - Ukentlige oppgaver
