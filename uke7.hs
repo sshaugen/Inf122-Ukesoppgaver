@@ -42,7 +42,7 @@ size = folde (\a -> 1) (\x -> \y -> x + y)
 
 -- Del B
 prefiks :: Expr -> String
-prefiks(Val n) = show n
+prefiks(Val n) = show n ++ " " 
 prefiks (Add a b) = "+ " ++ prefiks a ++ prefiks b
 
 infiks :: Expr -> String
@@ -50,6 +50,6 @@ infiks (Val n) = show n
 infiks (Add a b) = "(" ++ infiks a ++ " + " ++ infiks b ++ ")"
 
 postfiks :: Expr -> String
-postfiks (Val n) = show n
+postfiks (Val n) = " " ++ show n 
 postfiks (Add a b) = postfiks a ++ postfiks b ++ " +"
 
